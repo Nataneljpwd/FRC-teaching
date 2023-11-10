@@ -10,7 +10,9 @@ public class Teacher extends Person {
     public double[] getGrades(Student[] students) {
         //grades[i] -> avg of sridents[i]
         double[] grades = new double[students.length];
-        
+        for(int i=0;i<students.length;i++){
+            grades[i]=students[i].getAvgGrade();
+        }
         return grades;
     }
 
